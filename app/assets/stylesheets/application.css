@@ -19,15 +19,7 @@
   background-color: blue;
   height: 30px;
 }
-.nav-link{
-  blackground-color: black;
-  margin-top: 6px;
-}
 
-.btns-post{
- margin-left: 30px;
-}
-
-.navbar-brand{
-  color: white;
+.signin {
+  margin-left: 1300px;
 }
