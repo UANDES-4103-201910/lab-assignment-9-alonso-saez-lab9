@@ -10,8 +10,9 @@
   </div>
   <div class="actions">
     <%= f.submit "Log In" %>
+    <%= link_to 'Sign in', registratios_path %>
+    <%= link_to 'Sign in with Facebook', user_facebook_omniauth_authorize_path %>
+
   </div>
   <br>
 <% end %>
-<%= link_to 'Sign in', registratios_path %>
-<%= link_to 'Sign in with Facebook', user_facebook_omniauth_authorize_path %>

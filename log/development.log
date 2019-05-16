@@ -3577,3 +3577,121 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 74ms (Views: 71.7ms | ActiveRecord: 0.0ms)
 
 
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/antoniasaez/Escritorio/lab-assignment-9-alonso-saez-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 00:00:51 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+Completed 401 Unauthorized in 21ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-16 00:00:51 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 486ms (Views: 448.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 00:00:56 -0400
+Processing by SessionsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-16 00:00:56 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.1ms)
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 66ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 00:01:00 -0400
+Processing by SessionsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-16 00:01:00 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 113ms (Views: 111.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 00:01:02 -0400
+Processing by SessionsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-16 00:01:02 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (3.7ms)
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 107ms (Views: 103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2019-05-16 00:01:03 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 00:01:21 -0400
+Processing by SessionsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-16 00:01:21 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 52ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-16 00:01:47 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-16 00:03:12 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (9.2ms)
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 929ms (Views: 927.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-16 00:03:52 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 84ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 00:04:00 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 00:04:01 -0400
+Started GET "/users/auth/facebook/callback?code=AQDtzy_pNS89Com4FLPAyvft3yGnOkkf7nXCcAV5s4BU8JibQFS2-5r8bTKzAX5hEx0JQVW6TFNwP2dNaeXIQLxJNsaNQJJOEsdp2dajEfvGSrD0bHrX8b5TwSWA7dVGoFZHyy2d8inHRiY-3JwYiZdY8VsbuoJUiB_52fgsuph5FvllsT9zK6H4Te1YyVOIm_QQBntxbttFt5mrRvaUP-RS5cz7r-A-Iw4W8D89sMn7yjxRJv8UMEhu_Z7ld-KGjsxTA-7DLsbtrpI-Z1sCYfT0HGbXDLmQk7Sz9P_pGMXEm8AaQ8hPPJcHbxiREz59zIg&state=c356efa9dae6cabdb705e00f7563a5d88abae701d289c8ab" for 127.0.0.1 at 2019-05-16 00:05:09 -0400
+
+AbstractController::ActionNotFound - The action 'facebook' could not be found for Devise::OmniauthCallbacksController:
+
+Started POST "/__better_errors/b2664d46a6dcbbca/variables" for 127.0.0.1 at 2019-05-16 00:05:11 -0400
