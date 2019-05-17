@@ -3695,3 +3695,428 @@ Started GET "/users/auth/facebook/callback?code=AQDtzy_pNS89Com4FLPAyvft3yGnOkkf
 AbstractController::ActionNotFound - The action 'facebook' could not be found for Devise::OmniauthCallbacksController:
 
 Started POST "/__better_errors/b2664d46a6dcbbca/variables" for 127.0.0.1 at 2019-05-16 00:05:11 -0400
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/antoniasaez/Escritorio/lab-assignment-9-alonso-saez-lab9/app/models/application_record.rb:1)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/antoniasaez/Escritorio/lab-assignment-9-alonso-saez-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 18:54:38 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+Completed 401 Unauthorized in 28ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-16 18:54:38 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.7ms)
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 665ms (Views: 613.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 18:54:42 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 18:54:43 -0400
+Started GET "/users/auth/facebook/callback?code=AQANajBbXl4aOgU_OaiykgNFAHUQfot4U9a5NsnTiyrslAWABXWwziYiiGR1XNHmerhH3tp4vpOIWzZkPWVfqXHnGz0XoXi2W2zAYHZiBHTwKrbGJMhb02pK1OT3ZrpJbd0GZMRGOK8gUfiJE8GJOGLALRMTjg87VlGCHJq7K7nfjQW5kRRcHOt2IN31VrVpAu51ltvoUA2JP5SgimtET5it6OMA_EWlqTRilCZ_MhoaK0725QVqCcw552974b6ZQKlFZM0NmDAK9knQ66gCrC4TpSX6N8yDl9eWKEk29JhqI877gwhIcmLrz9DcqgOSaCE&state=29591addbe42e42dc4f68a40b68b3cbc76b3dff9b179c3ac" for 127.0.0.1 at 2019-05-16 18:54:44 -0400
+
+AbstractController::ActionNotFound - The action 'facebook' could not be found for Devise::OmniauthCallbacksController:
+
+Started POST "/__better_errors/2bdd8e9816b0968e/variables" for 127.0.0.1 at 2019-05-16 18:54:44 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 19:00:08 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 19:00:08 -0400
+Started GET "/users/auth/facebook/callback?code=AQDQRlpL2j236gJm-UrbGiDKbvY6p6-DnvNSCEu6Nw5pcTGL4DQMSD7Zyqc3HENItsJAaxCCILclqFG8X4KyMgskSuz5luSUKnSr5WjS4vEGD5UnWIxeC0sl1Fm1jkw0EcOY97kNHqX3d6SgziAFPr2DshvsILPDs9Gqph2bTxMdqZZDZzGam1WLoZYOq8k9DUQMC6Qqm_vNSsUWQFyyrJ6zOGQ1cm89KGHI2xxsJOYYsnJ5Hfa6aeJzENhFYmd5ONBCjWeVHniOHDApiBfBsTzPcN_UVw5YVEuJRmwFeNiGZW-jYMzsFpU1yXz2JQNDTLY&state=d8b2c5c64eb6c4dfffa0b7436ddc6f95cb5fdc7295565920" for 127.0.0.1 at 2019-05-16 19:00:08 -0400
+
+AbstractController::ActionNotFound - The action 'facebook' could not be found for Devise::OmniauthCallbacksController:
+
+Started POST "/__better_errors/40e99d5f5795f15b/variables" for 127.0.0.1 at 2019-05-16 19:00:09 -0400
+Started GET "/" for 127.0.0.1 at 2019-05-16 19:02:12 -0400
+Processing by SessionsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-16 19:02:12 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.8ms)
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 48ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 19:02:15 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 19:02:15 -0400
+Started GET "/users/auth/facebook/callback?code=AQD-FPyf9KM4x6mhRQFH-26BRaSanPpokFZQ2lPo4obApqZWdr-RqDAbl62LpYhfJIJoyUf2BWDusrh9pR8uF1KXuh3X5OEF31rcjmD2LTvnsVAXKK3k-1NUJ3N01EVP6SyIsq8pAyplhf7EZyXrz8mxwP1ThTpl0mEzEL3VdPCDay19ejtuTUFa_JDtgWkxGeGPogPhRujuvssXKcUi_flsHbY6r9bktAOSihwpkFb2JMFyz3lTqRpWJFdT2GtveqAQ23zYwv4uCfE0sj89PCMkhfjguTqejhJbAphpj0jAxt6nH9nB7Zh_T7VBF2HTDX8&state=5fe0a139e7db38050fbc8e06e1f955ebf6d7dc0bb1dbe504" for 127.0.0.1 at 2019-05-16 19:02:16 -0400
+
+AbstractController::ActionNotFound - The action 'facebook' could not be found for Devise::OmniauthCallbacksController:
+
+Started POST "/__better_errors/44794a9dfa502d24/variables" for 127.0.0.1 at 2019-05-16 19:02:17 -0400
+Started POST "/__better_errors/44794a9dfa502d24/variables" for 127.0.0.1 at 2019-05-16 19:02:21 -0400
+Started POST "/__better_errors/44794a9dfa502d24/variables" for 127.0.0.1 at 2019-05-16 19:02:23 -0400
+Started POST "/__better_errors/44794a9dfa502d24/variables" for 127.0.0.1 at 2019-05-16 19:02:26 -0400
+Started POST "/__better_errors/44794a9dfa502d24/variables" for 127.0.0.1 at 2019-05-16 19:02:33 -0400
+Started POST "/__better_errors/44794a9dfa502d24/variables" for 127.0.0.1 at 2019-05-16 19:02:35 -0400
+Started POST "/__better_errors/44794a9dfa502d24/variables" for 127.0.0.1 at 2019-05-16 19:02:37 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 19:06:48 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 19:06:48 -0400
+Started GET "/users/auth/facebook/callback?code=AQDTmopYq6bakPUIgP7Yo7deZrjZwxxwiqcoEXGTCqVHKT9R_CZ-7tegdUegaHAUT9IJhBrTz5dro7RFrFfYIQaGMFH8JncZm9dWVsWyEdzbGzPRxXHbctexS6Tzt5fOAzvnBujzDaQKTp_N_ejg9IO1YYnPjEkLzpafNnjwIQgk_HFaHdt-PkMNWI3ixXL19llfjvxF8wHV7t7puhqTAXiiq0Dorof2xnFOtVNMnVWP3gO6E3d6uo8UD4v01wJNFx6kr18mKixlwIq_I2T_y5BQSZdZUZg0lgaSBZSm0j0yhIEkaRX9tuZHmwOratURmSM&state=56a36cb0738d0f7cb036364fed2fca161140c342726eafda" for 127.0.0.1 at 2019-05-16 19:06:49 -0400
+
+NameError - uninitialized constant Users:
+
+Started POST "/__better_errors/e2d6dcab7e0e64cb/variables" for 127.0.0.1 at 2019-05-16 19:06:49 -0400
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/antoniasaez/Escritorio/lab-assignment-9-alonso-saez-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 20:04:19 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+Completed 401 Unauthorized in 21ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-05-16 20:04:19 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.8ms)
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 575ms (Views: 541.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:04:22 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:04:23 -0400
+Started GET "/users/auth/facebook/callback?code=AQAFmX2844lOWlndXMlZXZqx0EEnAUw1JcQ8-AJnHCvx5mPwg938aqvnQHugVrlAaXEFWhIK153aJ579rkC79RqRdF8WcuHq60Ko8AYprcjuSmVoptYgXS_nSv1r3I0tHqunphpDaB2nY_OfP05Pzj9jy5vQFZvErctJqhraKL-Is-qXvNl3BGXzKUOdHejzhbguXjlV_1RLLGJlkdEEC41gvFWLAcOLzzG3WoV4lbCu1W_ZIlbXNHHZ_Brsux868tXp9Yyhsb15RUZZQgiEgdpJButmGJlMQzBpJQTL4DbNuaReFdQgHe7lv8jMjgUpBp0&state=079b7e67bf7487471258b070b5514ece3681b1f65d96c9f4" for 127.0.0.1 at 2019-05-16 20:04:23 -0400
+
+SyntaxError - syntax error, unexpected '=', expecting end
+...ssion("devise.facebook_data") = request.env["omniauth.auth"]
+...                              ^:
+  app/controllers/users/omniauth_callbacks_controller.rb:8:in `'
+
+Started POST "/__better_errors/16cce03bd28829ca/variables" for 127.0.0.1 at 2019-05-16 20:04:25 -0400
+Started GET "/users/auth/facebook/callback?code=AQAFmX2844lOWlndXMlZXZqx0EEnAUw1JcQ8-AJnHCvx5mPwg938aqvnQHugVrlAaXEFWhIK153aJ579rkC79RqRdF8WcuHq60Ko8AYprcjuSmVoptYgXS_nSv1r3I0tHqunphpDaB2nY_OfP05Pzj9jy5vQFZvErctJqhraKL-Is-qXvNl3BGXzKUOdHejzhbguXjlV_1RLLGJlkdEEC41gvFWLAcOLzzG3WoV4lbCu1W_ZIlbXNHHZ_Brsux868tXp9Yyhsb15RUZZQgiEgdpJButmGJlMQzBpJQTL4DbNuaReFdQgHe7lv8jMjgUpBp0&state=079b7e67bf7487471258b070b5514ece3681b1f65d96c9f4" for 127.0.0.1 at 2019-05-16 20:08:54 -0400
+
+OAuth2::Error - {"message"=>"This authorization code has been used.", "type"=>"OAuthException", "code"=>100, "fbtrace_id"=>"A4vyGNP1uHh"}: 
+{"error":{"message":"This authorization code has been used.","type":"OAuthException","code":100,"fbtrace_id":"A4vyGNP1uHh"}}:
+
+Started POST "/__better_errors/792fabf108882764/variables" for 127.0.0.1 at 2019-05-16 20:08:55 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:09:11 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:09:12 -0400
+Started GET "/users/auth/facebook/callback?code=AQAZhj9v1Brb82e1xGgybUd7oHQwis5idtXg2ZCgVVpgHB1tyPalr0UIXne54DEVCOTNSP30GUBxRPSJBXP71Ck6ION86xs_ua_8AyExMu0aY4YyDz9Fu6POo7HtDUMGeVeQw42nflO3fkwipGSzxejxulUEAtNBgXpmnSrDWyMXo8mr7a69UTeQdvG16Old8UshrIdicDpWwUuYWsxLN8WN2GuhzivKhVw_QmvFu_Q3mJcvUU4aKQmfnXXXWd1bQcWtECXEiM6of_oHTY839k_2Gei88fyhnLTO6pqdDdbWAuLjYA3NYgRMHP-gYzm8SxQ&state=d4dabe9331b8418c9f87cae333c9ea2600e7d574a1a970fd" for 127.0.0.1 at 2019-05-16 20:09:12 -0400
+
+SyntaxError - syntax error, unexpected '=', expecting end
+...ssion("devise.facebook_data") = request.env["omniauth.auth"]
+...                              ^:
+  app/controllers/users/omniauth_callbacks_controller.rb:8:in `'
+
+Started POST "/__better_errors/f0e08da31295cb58/variables" for 127.0.0.1 at 2019-05-16 20:09:13 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:09:54 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:09:55 -0400
+Started GET "/users/auth/facebook/callback?code=AQADjvGxjmdQYuQb9qZ24ibw8V1SNEL9ZQ68TRkkfTXIAwZ9ZE7a6c85_AXZrkR59Pe4ufbarA-K9BsbsqcHzbiHMQoTzMnK5uiOo3BjFB0q_83fcjZ2HgZXenaMIr2k_qko-XcsJxhzQgL0uiz6-nT6cBUSedkvChbsP8ylvYVZGz4PCr-jmNnUrL6DZMtoTYBD3R_X2a5l8ei-Nkjtmb8rxI-k00ba0TnW9zT6q20LrSbjQiVjpZFYwSjE4ZO8SmDkbKVA4W_QxodCXfRaz2_aWgX2BNgpsubMnejtADpURbu9_rqicXtyuPtEBwzhcC4&state=0a6ec292dc1a3da3ad3739c4ddca3c9e26e3a214bdc8d03e" for 127.0.0.1 at 2019-05-16 20:09:55 -0400
+
+SyntaxError - else without rescue is useless
+    else
+    ^~~~
+/home/antoniasaez/Escritorio/lab-assignment-9-alonso-saez-lab9/app/controllers/users/omniauth_callbacks_controller.rb:8: syntax error, unexpected '=', expecting end
+...ssion("devise.facebook_data") = request.env["omniauth.auth"]
+...                              ^
+/home/antoniasaez/Escritorio/lab-assignment-9-alonso-saez-lab9/app/controllers/users/omniauth_callbacks_controller.rb:16: syntax error, unexpected end, expecting end-of-input:
+  app/controllers/users/omniauth_callbacks_controller.rb:7:in `'
+
+Started POST "/__better_errors/bb5af604fe6713d0/variables" for 127.0.0.1 at 2019-05-16 20:09:56 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:10:47 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:10:48 -0400
+Started GET "/users/auth/facebook/callback?code=AQAbyRKyGYX8JMHLxvpjWg3vHiElw8YjNOqAITb_9fe-9dekb-Eksal2rGF3xh-NByHMcLXvjHROvuGNROjIjl6PeookA1YRHcG4gkXi5_gzHb_vvyAxTunFBYBUgVkoAs_G8S1r1cIDcf4neG2JZ9AABDXzOXRaM7S_l44SKsXz2BueAD8qRKNqHUCwWpy0AdPDGn0i3zNhH6jBeRxaEZkmpWuMWwKI5gUJURmXzVTEqO2UMgOzk6O4flsmEWJQb_6y2fbJc3BZPsoSfr4tnYAlQNpzOukJs3_J9peaZ7iYy7efe6XXndNv3nWxudLnqJo&state=f35ae018c86b49c03f6afa82196371125a5f1a81291066bf" for 127.0.0.1 at 2019-05-16 20:10:48 -0400
+
+SyntaxError - syntax error, unexpected '=', expecting end
+...ssion("devise.facebook_data") = request.env["omniauth.auth"]
+...                              ^:
+  app/controllers/users/omniauth_callbacks_controller.rb:8:in `'
+
+Started POST "/__better_errors/3de7f11268514fa0/variables" for 127.0.0.1 at 2019-05-16 20:10:49 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:14:05 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:14:06 -0400
+Started GET "/users/auth/facebook/callback?code=AQALjUTolzwV-dq2FNwuoHUDYa1tknNwpHigNd2NdNjiyeKxWI6VIUmqAecIukZGDc7adY4G03rkmGlj1WSV_P4lSrKjoyKKiHJO08rA3XisF7YdvUOes2BPtxQ5o9OWq1a-SU7UGrBXX_BzFy6TN8ZxSlP_rSVZoGbPthAE-K8T6rBEbYUe-j4ruxpLKSdPF8IKmMnFiejdtfks2j7gdjr6o9vEHMXvB2aFfWqZkrQSpH7wHeTEpXPAV6h09SUXZbBeZwPGZqsm5dI_r8Zs5aXDec-sx7lI4RUsxvFX0ZBAgMcXxTuCiX8mMyN3VnYB2q0&state=867d7b23383976cca959579fd2e6389a7b4df163a0f6ac11" for 127.0.0.1 at 2019-05-16 20:14:06 -0400
+
+SyntaxError - syntax error, unexpected '=', expecting end
+...ssion("devise.facebook_data") = request.env["omniauth.auth"]
+...                              ^:
+  app/controllers/users/omniauth_callbacks_controller.rb:8:in `'
+
+Started POST "/__better_errors/6f15e648adbd547e/variables" for 127.0.0.1 at 2019-05-16 20:14:07 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:15:52 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:15:52 -0400
+Started GET "/users/auth/facebook/callback?code=AQBrYLwDLmjlUvy7CdyIWUsguTlpjlPLu5FeBg3skHNyjcwZlYAtHkqvGeimqkBPBtM21tDPWA8zS0jTJMDKoG-39RsHJvT5wCDKl7hYwp7kACKnUMV5FlvFZp_ccQXiv1ghSa5NFMYt8r1qfwY2zHfDEqjJAkLyAABFnlS6AB0_khffiymuTZP21wTDvsPYdlIUtsm_kGL0NkZ80tRIfLFWD_7qR_3ftNPyiErorxc3hmYC2mrehOdfJymg45GqzcnAypuiu0VoisLHkP1rHLByAG4im7GY3duj7ptO8FZFnxtZwpIjjAkRkSezmsJATZE&state=a105d47dafcb3531af8f94ca05430d228a018278a3f76444" for 127.0.0.1 at 2019-05-16 20:15:53 -0400
+
+SyntaxError - syntax error, unexpected =>, expecting end
+...sion("devise.facebook_data") => request.env["omniauth.auth"]
+...                             ^~:
+  app/controllers/users/omniauth_callbacks_controller.rb:8:in `'
+
+Started POST "/__better_errors/375025bc29119de7/variables" for 127.0.0.1 at 2019-05-16 20:15:53 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:20:39 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:20:39 -0400
+Started GET "/users/auth/facebook/callback?code=AQBZkPXQccWjrEb5xbAFwiwM8yASapETIKEzHdpi-KdOyYyNavelM-o4KUqt95d0fnQDMarCWeU-zSQAU7S5FigKzcD-BNOFGA9HbwEI3Aw8BRvgUjFGURfnF6XgZkeZQGw3VAxIAB_RjYNWP1-jgjxLaV7_Lqvo6SlZ8m5RQAVwHkfLPW8tak6PqXkM8FYOFeav9hDTuxG2fNz0TFHiorDsUeko9_hAn7A4yJPbAmQaeqFPummsB-t7L45jDliH9fe6ggv3xb6OCF72wLudvUdICL0J2GuTCvHVgA7d0kolUbIB_-NyaBSCRoZUfH3fRA0&state=850db596ccf6c30cf3f52cd0db6943f5fe8d82de2fb264fa" for 127.0.0.1 at 2019-05-16 20:20:40 -0400
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQBZkPXQccWjrEb5xbAFwiwM8yASapETIKEzHdpi-KdOyYyNavelM-o4KUqt95d0fnQDMarCWeU-zSQAU7S5FigKzcD-BNOFGA9HbwEI3Aw8BRvgUjFGURfnF6XgZkeZQGw3VAxIAB_RjYNWP1-jgjxLaV7_Lqvo6SlZ8m5RQAVwHkfLPW8tak6PqXkM8FYOFeav9hDTuxG2fNz0TFHiorDsUeko9_hAn7A4yJPbAmQaeqFPummsB-t7L45jDliH9fe6ggv3xb6OCF72wLudvUdICL0J2GuTCvHVgA7d0kolUbIB_-NyaBSCRoZUfH3fRA0", "state"=>"850db596ccf6c30cf3f52cd0db6943f5fe8d82de2fb264fa"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "10218472834273308"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "anto_saez14@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "anto_saez14@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 259ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 20:20:41 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.5ms)
+  Rendered /home/antoniasaez/.rvm/gems/ruby-2.6.0/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 63ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-05-16 20:24:00 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sy5uWK/5DYKgh+mDB6XEUzfiKOpjoBM8FZifHYhmKxBzChjLA+c7ISizSKxm/Z4Hz/1Jh5HJou0nKAAdE5jiBg==", "user"=>{"email"=>"juan@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juan@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juan@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "encrypted_password") VALUES (?, ?, ?, ?)[0m  [["email", "juan@gmail.com"], ["created_at", "2019-05-17 00:24:00.460581"], ["updated_at", "2019-05-17 00:24:00.460581"], ["encrypted_password", "$2a$11$IyRT5ZVd6qSbtLfCW/VClua1edYJ9.pqFFpWbjHwzARciORu4XyIC"]]
+  [1m[35m (14.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 340ms (ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 20:24:00 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1035.9ms)
+Completed 500 Internal Server Error in 1050ms (ActiveRecord: 0.5ms)
+
+
+
+NameError - undefined local variable or method `registratios_path' for #<#<Class:0x00007fefec1cc9e0>:0x00007fefec1dac70>
+Did you mean?  registrations_path
+               registration_path
+               registrations_url
+               registration_url:
+  app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__637689207707210063_70334217613060'
+  app/views/sessions/new.html.erb:1:in `_app_views_sessions_new_html_erb__637689207707210063_70334217613060'
+
+Started POST "/__better_errors/50cf5603a3d372c7/variables" for 127.0.0.1 at 2019-05-16 20:24:02 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:24:13 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:24:13 -0400
+Started GET "/users/auth/facebook/callback?code=AQD6rULtopwe3DspRctipxFdelRBOYUXKfnjYeqt0IPl4YHtfVAMvZgqW2J8TrlOSLFGyJ0rod2NkaDu8tIo6xE6_kiAHQpfuD9wdKhWCfp5z_G7SnNRAGbWZWMV8k7Riy8gtt6U_nB-r53JujbDZ5nI3xDQgxtOCyg6MnnlkWcq-du2T0JA2fk5CJ_vtvbKdCBBZsYqwypjAnoksLUW6x1SD88gicl5HRYFwv4IQjbBs80SWCgT8lD0d3Pe6FISxJwEbWkV88CJ3-K2WY0k2L6HvpL7BcRGteLkqLdi21w1Vch0-x1gaQxukL0Sz2P65ko&state=87b5d2edd4e65a1a61eb71947f950959657fb03798e8b3b6" for 127.0.0.1 at 2019-05-16 20:24:13 -0400
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQD6rULtopwe3DspRctipxFdelRBOYUXKfnjYeqt0IPl4YHtfVAMvZgqW2J8TrlOSLFGyJ0rod2NkaDu8tIo6xE6_kiAHQpfuD9wdKhWCfp5z_G7SnNRAGbWZWMV8k7Riy8gtt6U_nB-r53JujbDZ5nI3xDQgxtOCyg6MnnlkWcq-du2T0JA2fk5CJ_vtvbKdCBBZsYqwypjAnoksLUW6x1SD88gicl5HRYFwv4IQjbBs80SWCgT8lD0d3Pe6FISxJwEbWkV88CJ3-K2WY0k2L6HvpL7BcRGteLkqLdi21w1Vch0-x1gaQxukL0Sz2P65ko", "state"=>"87b5d2edd4e65a1a61eb71947f950959657fb03798e8b3b6"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "10218472834273308"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "anto_saez14@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "anto_saez14@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 320ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 20:24:14 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 20:24:14 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1190.0ms)
+Completed 500 Internal Server Error in 1196ms (ActiveRecord: 0.2ms)
+
+
+
+NameError - undefined local variable or method `registratios_path' for #<#<Class:0x00007fefec1cc9e0>:0x00007feff945e8e0>
+Did you mean?  registrations_path
+               registration_path
+               registrations_url
+               registration_url:
+  app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__637689207707210063_70334328012760'
+  app/views/sessions/new.html.erb:1:in `_app_views_sessions_new_html_erb__637689207707210063_70334328012760'
+
+Started POST "/__better_errors/f9c4cb180c425df1/variables" for 127.0.0.1 at 2019-05-16 20:24:16 -0400
+Started GET "/" for 127.0.0.1 at 2019-05-16 20:24:28 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1284.4ms)
+Completed 500 Internal Server Error in 1290ms (ActiveRecord: 0.2ms)
+
+
+
+NameError - undefined local variable or method `registratios_path' for #<#<Class:0x00007fefec1cc9e0>:0x00007feff969d908>
+Did you mean?  registrations_path
+               registration_path
+               registrations_url
+               registration_url:
+  app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__637689207707210063_70334329188500'
+  app/views/sessions/new.html.erb:1:in `_app_views_sessions_new_html_erb__637689207707210063_70334329188500'
+
+Started POST "/__better_errors/ecaac8e13113d748/variables" for 127.0.0.1 at 2019-05-16 20:24:30 -0400
+Started GET "/" for 127.0.0.1 at 2019-05-16 20:24:38 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1169.5ms)
+Completed 500 Internal Server Error in 1186ms (ActiveRecord: 0.4ms)
+
+
+
+NameError - undefined local variable or method `registratios_path' for #<#<Class:0x00007fefec1cc9e0>:0x00005570ad2abb60>
+Did you mean?  registrations_path
+               registration_path
+               registrations_url
+               registration_url:
+  app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__637689207707210063_46971214818460'
+  app/views/sessions/new.html.erb:1:in `_app_views_sessions_new_html_erb__637689207707210063_46971214818460'
+
+Started POST "/__better_errors/8fa6e6da7ba59551/variables" for 127.0.0.1 at 2019-05-16 20:24:40 -0400
+Started GET "/" for 127.0.0.1 at 2019-05-16 20:24:57 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1435.0ms)
+Completed 500 Internal Server Error in 1443ms (ActiveRecord: 0.2ms)
+
+
+
+NameError - undefined local variable or method `registratios_path' for #<#<Class:0x00007fefec1cc9e0>:0x00007feff94ed400>
+Did you mean?  registrations_path
+               registration_path
+               registrations_url
+               registration_url:
+  app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__637689207707210063_70334328304900'
+  app/views/sessions/new.html.erb:1:in `_app_views_sessions_new_html_erb__637689207707210063_70334328304900'
+
+Started POST "/__better_errors/e895bfb4a2407bf8/variables" for 127.0.0.1 at 2019-05-16 20:24:59 -0400
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/antoniasaez/Escritorio/lab-assignment-9-alonso-saez-lab9/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-05-16 20:25:18 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (939.7ms)
+Completed 500 Internal Server Error in 995ms (ActiveRecord: 1.2ms)
+
+
+
+NameError - undefined local variable or method `registratios_path' for #<#<Class:0x000056418ea25ac8>:0x000056418ea40c10>
+Did you mean?  registrations_path
+               registration_path
+               registrations_url
+               registration_url:
+  app/views/sessions/new.html.erb:13:in `block in _app_views_sessions_new_html_erb__4463276266063867048_47419782936560'
+  app/views/sessions/new.html.erb:1:in `_app_views_sessions_new_html_erb__4463276266063867048_47419782936560'
+
+Started POST "/__better_errors/528b2d4d01ae8903/variables" for 127.0.0.1 at 2019-05-16 20:25:20 -0400
+Started GET "/" for 127.0.0.1 at 2019-05-16 20:28:49 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 468ms (Views: 464.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:28:54 -0400
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-05-16 20:28:55 -0400
+Started GET "/users/auth/facebook/callback?code=AQCe3cOD1Mp4KXpi7Wa8u3tRRD_4PqIW15rNZG67sfLQaoimJcgl41okTDTOwrclwzdGLZbOqybTCC1nvbkOfY2-Ave43NI5RgXMM3UtLlsOTu0Ci37rJOhcax46OPNQfPd7RNTc1b79koBLWCzwS15iLb0-uIBtC0ca2A6ALDe8EnmX4Dtt25KXKfZzMf1fKyZTUCpE_kgJ-2kgp-ezfvajL5bVnLQ8Eh4g6hzcXaxrCyIy6ombJHn-XqfVdA0QS-bVd5ThsyeMLZ4byn6TsDyj37px6HeEC7T89k4SWL8o19A76fHgtsLsfigmrnXLKxw&state=e2de8c94d90964ccea7581484f6497eceff7319b98e8e2c7" for 127.0.0.1 at 2019-05-16 20:28:56 -0400
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCe3cOD1Mp4KXpi7Wa8u3tRRD_4PqIW15rNZG67sfLQaoimJcgl41okTDTOwrclwzdGLZbOqybTCC1nvbkOfY2-Ave43NI5RgXMM3UtLlsOTu0Ci37rJOhcax46OPNQfPd7RNTc1b79koBLWCzwS15iLb0-uIBtC0ca2A6ALDe8EnmX4Dtt25KXKfZzMf1fKyZTUCpE_kgJ-2kgp-ezfvajL5bVnLQ8Eh4g6hzcXaxrCyIy6ombJHn-XqfVdA0QS-bVd5ThsyeMLZ4byn6TsDyj37px6HeEC7T89k4SWL8o19A76fHgtsLsfigmrnXLKxw", "state"=>"e2de8c94d90964ccea7581484f6497eceff7319b98e8e2c7"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "10218472834273308"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "anto_saez14@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "anto_saez14@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 444ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-05-16 20:28:57 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-16 20:28:57 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 97ms (Views: 90.3ms | ActiveRecord: 0.2ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/antoniasaez/Escritorio/lab-assignment-9-alonso-saez-lab9/app/models/application_record.rb:1)
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
